@@ -3,7 +3,7 @@ const app = $('#app'), hud = $('#hud');
 let D, S;
 
 const pic = (folder, file, label, cls = '') =>
-  `<div class="pic ${cls} ${file ? '' : 'ph'}">${file ? `<img src="images/${folder}/${file}" alt="" onerror="this.parentNode.classList.add('ph');this.remove()">` : ''}<span>${label}</span></div>`;
+  `<div class="pic ${cls} ${file ? '' : 'ph'}">${file ? `<img src="Images/${folder}/${file}" alt="" onerror="this.parentNode.classList.add('ph');this.remove()">` : ''}<span>${label}</span></div>`;
 const charPic = (c, cls) => pic('characters', c.image, 'playable char ' + (D.characters.indexOf(c) + 1), cls);
 const itemPic = (i, cls) => pic('items', i.image, 'item ' + (D.items.indexOf(i) + 1), cls);
 const evPic = (e, cls) => pic('events', e.image, 'event background ' + (D.events.indexOf(e) + 1), cls);
