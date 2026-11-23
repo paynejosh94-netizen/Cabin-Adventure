@@ -1,0 +1,422 @@
+{
+  "settings": {
+    "gameTitle": "Cabin Adventure",
+    "titleImage": null,
+    "startingEnergy": 3,
+    "itemsToPick": 3,
+    "friendItem": "gun",
+    "friendItemHint": "Something tells you it would be smart to bring some protection out there. Are you sure you're ready?",
+    "slot3Weights": {
+      "random": 1,
+      "boon": 1,
+      "bane": 1
+    }
+  },
+  "story": {
+    "images": {
+      "intro": null,
+      "afterPacking": null
+    },
+    "intro": [
+      "Your friend Josh has invited you out for a weekend retreat at his family's cabin. Get ready for fun and adventure.",
+      "Time to get packed."
+    ],
+    "afterPacking": [
+      "Time to meet at Tyler's. He's driving us all in his short bus."
+    ]
+  },
+  "characters": [
+    {
+      "id": "char1",
+      "name": "Player 1",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char2",
+      "name": "Player 2",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char3",
+      "name": "Player 3",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char4",
+      "name": "Player 4",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char5",
+      "name": "Player 5",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char6",
+      "name": "Player 6",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char7",
+      "name": "Player 7",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char8",
+      "name": "Player 8",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char9",
+      "name": "Player 9",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char10",
+      "name": "Player 10",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char11",
+      "name": "Player 11",
+      "image": null,
+      "tagline": "Optional one-liner."
+    },
+    {
+      "id": "char12",
+      "name": "Player 12",
+      "image": null,
+      "tagline": "Optional one-liner."
+    }
+  ],
+  "items": [
+    {
+      "id": "warm-jacket",
+      "name": "Warm Jacket",
+      "image": null,
+      "description": "A nice warm jacket."
+    },
+    {
+      "id": "rope",
+      "name": "Rope",
+      "image": null,
+      "description": "Strong rope. Could be useful."
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks",
+      "image": null,
+      "description": "Paul's snacks. He'll be upset if I take these."
+    },
+    {
+      "id": "diet-coke",
+      "name": "Diet Coke",
+      "image": null,
+      "description": "Adrian's Diet Coke. He won't miss this one."
+    },
+    {
+      "id": "poppers",
+      "name": "Poppers",
+      "image": null,
+      "description": "'Vinyl Cleaner...'"
+    },
+    {
+      "id": "lorazepam",
+      "name": "Lorazepam",
+      "image": null,
+      "description": "10 mg?!"
+    },
+    {
+      "id": "romance-novel",
+      "name": "Romance Novel",
+      "image": null,
+      "description": "'Bride' by Ali Hazelwood."
+    },
+    {
+      "id": "creepy-doll",
+      "name": "Creepy Doll",
+      "image": null,
+      "description": "Christina's stupid doll."
+    },
+    {
+      "id": "hiking-boots",
+      "name": "Hiking Boots",
+      "image": null,
+      "description": "Sturdy boots."
+    },
+    {
+      "id": "gun",
+      "name": "A Gun",
+      "image": null,
+      "description": "A Gun."
+    }
+  ],
+  "events": [
+    {
+      "id": "random-1",
+      "type": "random",
+      "title": "Heavy Rainfall",
+      "image": null,
+      "description": "The rain really starts to come down.",
+      "correctItems": [
+        "warm-jacket"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-2",
+      "type": "random",
+      "title": "Strange Noises",
+      "image": null,
+      "description": "You hear strange animal noises nearby. Seems like it's coming from that bush over there.",
+      "correctItems": [
+        "snacks",
+        "creepy-doll"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-3",
+      "type": "random",
+      "title": "Wild Twink",
+      "image": null,
+      "description": "You see a wild twink nearby. What's he doing out here?",
+      "correctItems": [
+        "poppers"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-4",
+      "type": "random",
+      "title": "Treacherous Terrain",
+      "image": null,
+      "description": "The path forward looks unstable, but we need to push through.",
+      "correctItems": [
+        "rope",
+        "hiking-boots"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-5",
+      "type": "random",
+      "title": "A Helpful Stranger",
+      "image": null,
+      "description": "You come across a man named Lowe. He says he's certain he knows the way and that you should come with him, but you're not sure you trust that shimmer in his pale green eyes.",
+      "correctItems": [
+        "romance-novel"
+      ],
+      "successText": "You page through the book, getting momentarily caught up in the plot. But you read enough to know that he is a werewolf who only wants ONE thing, and it isn't to help you.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-6",
+      "type": "random",
+      "title": "Sheer Terror",
+      "image": null,
+      "description": "You feel like the cabin is too far away and that you will never make it. You're going to freeze to death out in these woods, and you know it.",
+      "correctItems": [
+        "lorazepam"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "random-7",
+      "type": "random",
+      "title": "Intense Thirst",
+      "image": null,
+      "description": "You haven't had anything to drink in hours. The thirst starts to hurt.",
+      "correctItems": [
+        "diet-coke"
+      ],
+      "successText": "Your choice was useful and you move on.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "boon-1",
+      "type": "boon",
+      "title": "Lucky Break",
+      "image": null,
+      "description": "The path is clear and the moon is bright.",
+      "outcomeText": "You make good time. No cost."
+    },
+    {
+      "id": "bane-1",
+      "type": "bane",
+      "title": "Twisted Ankle",
+      "image": null,
+      "description": "You misstep on a root.",
+      "outcomeText": "You limp onward and lose 1 energy."
+    },
+    {
+      "id": "friend-char1",
+      "type": "friend",
+      "friend": "char1",
+      "title": "Player 1 Appears",
+      "image": null,
+      "description": "Player 1 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char2",
+      "type": "friend",
+      "friend": "char2",
+      "title": "Player 2 Appears",
+      "image": null,
+      "description": "Player 2 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char3",
+      "type": "friend",
+      "friend": "char3",
+      "title": "Player 3 Appears",
+      "image": null,
+      "description": "Player 3 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char4",
+      "type": "friend",
+      "friend": "char4",
+      "title": "Player 4 Appears",
+      "image": null,
+      "description": "Player 4 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char5",
+      "type": "friend",
+      "friend": "char5",
+      "title": "Player 5 Appears",
+      "image": null,
+      "description": "Player 5 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char6",
+      "type": "friend",
+      "friend": "char6",
+      "title": "Player 6 Appears",
+      "image": null,
+      "description": "Player 6 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char7",
+      "type": "friend",
+      "friend": "char7",
+      "title": "Player 7 Appears",
+      "image": null,
+      "description": "Player 7 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char8",
+      "type": "friend",
+      "friend": "char8",
+      "title": "Player 8 Appears",
+      "image": null,
+      "description": "Player 8 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char9",
+      "type": "friend",
+      "friend": "char9",
+      "title": "Player 9 Appears",
+      "image": null,
+      "description": "Player 9 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char10",
+      "type": "friend",
+      "friend": "char10",
+      "title": "Player 10 Appears",
+      "image": null,
+      "description": "Player 10 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char11",
+      "type": "friend",
+      "friend": "char11",
+      "title": "Player 11 Appears",
+      "image": null,
+      "description": "Player 11 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    },
+    {
+      "id": "friend-char12",
+      "type": "friend",
+      "friend": "char12",
+      "title": "Player 12 Appears",
+      "image": null,
+      "description": "Player 12 needs help with something. Write a unique scenario here.",
+      "successText": "Your item saved the day.",
+      "failText": "That wasn't useful. You lose 1 energy.",
+      "doNothingText": "You do nothing and lose 1 energy."
+    }
+  ],
+  "endings": {
+    "win": {
+      "title": "You made it!",
+      "text": "You reach the cabin.",
+      "byEnergy": {
+        "3": "Perfect run, not a scratch.",
+        "2": "Bruised but happy.",
+        "1": "You barely crawled through the door."
+      }
+    },
+    "lose": {
+      "title": "Lights out",
+      "text": "You collapsed before reaching the cabin."
+    }
+  }
+}
