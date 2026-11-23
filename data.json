@@ -69,33 +69,33 @@
       "tagline": "Optional one-liner."
     },
     {
-      "id": "char8",
-      "name": "Player 8",
-      "image": null,
+      "id": "paul",
+      "name": "Paul",
+      "image": "paul.jpg",
       "tagline": "Optional one-liner."
     },
     {
-      "id": "char9",
-      "name": "Player 9",
-      "image": null,
+      "id": "gabriel",
+      "name": "Gabriel",
+      "image": "gabriel.jpg",
       "tagline": "Optional one-liner."
     },
     {
-      "id": "char10",
-      "name": "Player 10",
-      "image": null,
+      "id": "des",
+      "name": "Des",
+      "image": "des.jpg",
       "tagline": "Optional one-liner."
     },
     {
-      "id": "char11",
-      "name": "Player 11",
-      "image": null,
+      "id": "shane",
+      "name": "Shane",
+      "image": "shane.jpg",
       "tagline": "Optional one-liner."
     },
     {
-      "id": "char12",
-      "name": "Player 12",
-      "image": null,
+      "id": "jake",
+      "name": "Jake",
+      "image": "jake.jpg",
       "tagline": "Optional one-liner."
     }
   ],
@@ -349,56 +349,56 @@
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
-      "id": "friend-char8",
+      "id": "friend-paul",
       "type": "friend",
-      "friend": "char8",
-      "title": "Player 8 Appears",
+      "friend": "paul",
+      "title": "Paul Appears",
       "image": null,
-      "description": "Player 8 needs help with something. Write a unique scenario here.",
+      "description": "Paul needs help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
-      "id": "friend-char9",
+      "id": "friend-gabriel",
       "type": "friend",
-      "friend": "char9",
-      "title": "Player 9 Appears",
+      "friend": "gabriel",
+      "title": "Gabriel Appears",
       "image": null,
-      "description": "Player 9 needs help with something. Write a unique scenario here.",
+      "description": "Gabriel needs help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
-      "id": "friend-char10",
+      "id": "friend-des",
       "type": "friend",
-      "friend": "char10",
-      "title": "Player 10 Appears",
+      "friend": "des",
+      "title": "Des Appears",
       "image": null,
-      "description": "Player 10 needs help with something. Write a unique scenario here.",
+      "description": "Des needs help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
-      "id": "friend-char11",
+      "id": "friend-shane",
       "type": "friend",
-      "friend": "char11",
-      "title": "Player 11 Appears",
+      "friend": "shane",
+      "title": "Shane Appears",
       "image": null,
-      "description": "Player 11 needs help with something. Write a unique scenario here.",
+      "description": "Shane needs help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
-      "id": "friend-char12",
+      "id": "friend-jake",
       "type": "friend",
-      "friend": "char12",
-      "title": "Player 12 Appears",
+      "friend": "jake",
+      "title": "Jake Appears",
       "image": null,
-      "description": "Player 12 needs help with something. Write a unique scenario here.",
+      "description": "Jake needs help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
