@@ -108,25 +108,25 @@
     {
       "id": "warm-jacket",
       "name": "Warm Jacket",
-      "image": null,
+      "image": "warm-jacket.png",
       "description": "A nice warm jacket."
     },
     {
       "id": "rope",
       "name": "Rope",
-      "image": null,
+      "image": "rope.png",
       "description": "Strong rope. Could be useful."
     },
     {
       "id": "snacks",
       "name": "Snacks",
-      "image": null,
+      "image": "snacks.png",
       "description": "Paul's snacks. He'll be upset if I take these."
     },
     {
       "id": "diet-coke",
       "name": "Diet Coke",
-      "image": null,
+      "image": "diet-coke.png",
       "description": "Adrian's Diet Coke. He won't miss this one."
     },
     {
@@ -138,7 +138,7 @@
     {
       "id": "lorazepam",
       "name": "Lorazepam",
-      "image": null,
+      "image": "lorazepam.png",
       "description": "10 mg?!"
     },
     {
