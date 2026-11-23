@@ -1,7 +1,7 @@
 {
   "settings": {
     "gameTitle": "Cabin Adventure",
-    "titleImage": null,
+    "titleImage": "title.jpg",
     "startingEnergy": 3,
     "itemsToPick": 3,
     "friendItem": "gun",
@@ -15,7 +15,8 @@
   "story": {
     "images": {
       "intro": null,
-      "afterPacking": null
+      "afterPacking": null,
+      "busBreakdown": "breakdown.jpg"
     },
     "intro": [
       "Your friend Josh has invited you out for a weekend retreat at his family's cabin. Get ready for fun and adventure.",
@@ -23,6 +24,10 @@
     ],
     "afterPacking": [
       "Time to meet at Tyler's. He's driving us all in his short bus."
+    ],
+    "busBreakdown": [
+      "Halfway up the mountain road, Tyler's short bus lets out a loud bang, shudders, and rolls to a stop in a cloud of smoke. Tyler pops the hood, stares at the engine for a long moment, and announces that it isn't fixable.",
+      "There's no cell service and the sun is already sinking. Josh's cabin is a few miles away through the woods, so there's only one option: grab your bag and start walking. Whatever you packed is all you've got."
     ]
   },
   "characters": [
@@ -30,7 +35,7 @@
       "id": "cam",
       "name": "Cam",
       "image": "cam.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "I got dishonorably discharged last week. So now I can make it on this trip."
     },
     {
       "id": "tyler",
@@ -42,7 +47,7 @@
       "id": "adrian",
       "name": "Adrian",
       "image": "adrian.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Oh, it's free? Yeah, I'll join."
     },
     {
       "id": "kristin",
@@ -54,7 +59,7 @@
       "id": "logan",
       "name": "Logan",
       "image": "logan.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Does anyone else like the sound of rain? Hehe, I'm so autistic."
     },
     {
       "id": "kalina",
@@ -66,13 +71,13 @@
       "id": "christina",
       "name": "Christina",
       "image": "christina.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "I came all the way from Germany. This better be good."
     },
     {
       "id": "paul",
       "name": "Paul",
       "image": "paul.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Who's all coming?"
     },
     {
       "id": "gabriel",
@@ -84,7 +89,7 @@
       "id": "des",
       "name": "Des",
       "image": "des.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Should I bring anything?"
     },
     {
       "id": "shane",

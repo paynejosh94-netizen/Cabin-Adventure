@@ -61,7 +61,7 @@ function pack() {
   const clearWarn = () => { const w = $('#warn'); if (w) w.remove(); $('#ok').hidden = false; };
   document.querySelectorAll('.card').forEach(el => el.addEventListener('click', clearWarn));
   $('#ok').onclick = () => {
-    const go = () => { S.bag = sel; buildEvents(); story(D.story.afterPacking, nextEvent, 'afterPacking'); };
+    const go = () => { S.bag = sel; buildEvents(); story(D.story.afterPacking, () => story(D.story.busBreakdown, nextEvent, 'busBreakdown'), 'afterPacking'); };
     if (sel.includes(D.settings.friendItem)) return go();
     $('#ok').hidden = true;
     const w = document.createElement('div');
