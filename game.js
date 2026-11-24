@@ -18,7 +18,23 @@ function drawHud() {
   hud.innerHTML = charPic(S.char) + `<div><b>${S.char.name}</b><div class="hearts">${'♥'.repeat(Math.max(S.energy, 0))}${'♡'.repeat(max - Math.max(S.energy, 0))}</div></div>` +
     `<div class="bag">${S.bag.map(id => itemPic(item(id))).join('')}</div>`;
 }
-function show(html) { app.innerHTML = html; drawHud(); window.scrollTo(0, 0); }
+let token = 0;
+function show(html) {
+  const my = ++token;
+  const swap = () => {
+    if (my !== token) return;
+    app.innerHTML = html; drawHud(); window.scrollTo(0, 0);
+    app.style.opacity = 1; app.style.pointerEvents = '';
+  };
+  if (!app.dataset.ready || matchMedia('(prefers-reduced-motion: reduce)').matches) { app.dataset.ready = 1; swap(); return; }
+  app.style.opacity = 0; app.style.pointerEvents = 'none';
+  const fade = new Promise(r => setTimeout(r, 250));
+  const srcs = [...html.matchAll(/src="([^"]+)"/g)].map(m => m[1]);
+  const load = Promise.race([
+    Promise.all(srcs.map(s => new Promise(r => { const i = new Image(); i.onload = i.onerror = r; i.src = s; }))),
+    new Promise(r => setTimeout(r, 1500))]);
+  Promise.all([fade, load]).then(swap);
+}
 
 function title() {
   S = null;
