@@ -19,12 +19,13 @@ function drawHud() {
     `<div class="bag">${S.bag.map(id => itemPic(item(id))).join('')}</div>`;
 }
 let token = 0;
-function show(html) {
+function show(html, bind) {
   const my = ++token;
   const swap = () => {
     if (my !== token) return;
     app.innerHTML = html; drawHud(); window.scrollTo(0, 0);
     app.style.opacity = 1; app.style.pointerEvents = '';
+    if (bind) bind();
   };
   if (!app.dataset.ready || matchMedia('(prefers-reduced-motion: reduce)').matches) { app.dataset.ready = 1; swap(); return; }
   app.style.opacity = 0; app.style.pointerEvents = 'none';
@@ -38,15 +39,16 @@ function show(html) {
 
 function title() {
   S = null;
-  show(`<h1>${D.settings.gameTitle}</h1>${pic('story', D.settings.titleImage, 'title background', 'wide')}<button id="go">Start Game</button>`);
-  $('#go').onclick = select;
+  show(`<h1>${D.settings.gameTitle}</h1>${pic('story', D.settings.titleImage, 'title background', 'wide')}<button id="go">Start Game</button>`, () => {
+    $('#go').onclick = select;
+  });
 }
 
 function select() {
   let chosen = null;
   show(`<h2>Choose your character</h2><div class="grid">${D.characters.map(c =>
     `<div class="card" data-id="${c.id}">${charPic(c)}<b>${c.name}</b><small>${c.tagline || ''}</small></div>`).join('')}</div>
-    <button class="alt" id="back">Back</button><button id="ok" disabled>Confirm</button>`);
+    <button class="alt" id="back">Back</button><button id="ok" disabled>Confirm</button>`, () => {
   document.querySelectorAll('.card').forEach(el => el.onclick = () => {
     document.querySelectorAll('.card').forEach(x => x.classList.remove('sel'));
     el.classList.add('sel'); chosen = el.dataset.id; $('#ok').disabled = false;
@@ -56,17 +58,19 @@ function select() {
     S = { char: D.characters.find(c => c.id === chosen), energy: D.settings.startingEnergy, bag: [], i: 0 };
     story(D.story.intro, pack, 'intro');
   };
+  });
 }
 
 function story(text, next, img) {
-  show(`${pic('story', D.story.images && D.story.images[img], 'story background ' + img, 'wide')}${paras(text)}<button id="go">Continue</button>`);
-  $('#go').onclick = next;
+  show(`${pic('story', D.story.images && D.story.images[img], 'story background ' + img, 'wide')}${paras(text)}<button id="go">Continue</button>`, () => {
+    $('#go').onclick = next;
+  });
 }
 
 function pack() {
   const n = D.settings.itemsToPick; let sel = [];
   show(`<h2>Pack your bag</h2><p>Choose ${n} items.</p><div class="grid">${D.items.map(i =>
-    `<div class="card" data-id="${i.id}">${itemPic(i)}<b>${i.name}</b><small>${i.description}</small></div>`).join('')}</div><button id="ok" disabled>Confirm</button>`);
+    `<div class="card" data-id="${i.id}">${itemPic(i)}<b>${i.name}</b><small>${i.description}</small></div>`).join('')}</div><button id="ok" disabled>Confirm</button>`, () => {
   document.querySelectorAll('.card').forEach(el => el.onclick = () => {
     const id = el.dataset.id;
     if (sel.includes(id)) sel = sel.filter(x => x !== id);
@@ -87,6 +91,7 @@ function pack() {
     $('#revise').onclick = clearWarn;
     $('#proceed').onclick = go;
   };
+  });
 }
 
 function buildEvents() {
@@ -110,7 +115,7 @@ function nextEvent() {
   const label = { random: 'Random Event', friend: 'Friend Event', boon: 'Boon', bane: 'Bane' }[e.type];
   show(`<small>Event ${S.i + 1} of ${S.ev.length} - ${label}</small>${evPic(e, 'wide')}<h2>${e.title}</h2><p>${e.description}</p>` +
     (special ? `<button id="go">Press on</button>` :
-      `<p><b>Use an item?</b></p><div>${S.bag.map(id => `<button data-id="${id}">${item(id).name}</button>`).join('')}<button class="alt" data-id="">Do nothing (-1 energy)</button></div>`));
+      `<p><b>Use an item?</b></p><div>${S.bag.map(id => `<button data-id="${id}">${item(id).name}</button>`).join('')}<button class="alt" data-id="">Do nothing (-1 energy)</button></div>`), () => {
   if (special) $('#go').onclick = () => { if (e.type === 'bane') S.energy--; result(e.outcomeText, e.type === 'boon'); };
   else document.querySelectorAll('button[data-id]').forEach(b => b.onclick = () => {
     const id = b.dataset.id;
@@ -118,18 +123,21 @@ function nextEvent() {
     if (id && correct(e).includes(id)) return result(e.successText, true);
     S.energy--; result(id ? e.failText : e.doNothingText, false);
   });
+  });
 }
 
 function result(text, good) {
-  show(`<div class="result ${good ? 'good' : 'bad'}"><p>${text}</p></div><button id="go">Continue</button>`);
-  $('#go').onclick = () => { S.i++; (S.energy <= 0 || S.i >= S.ev.length) ? end() : nextEvent(); };
+  show(`<div class="result ${good ? 'good' : 'bad'}"><p>${text}</p></div><button id="go">Continue</button>`, () => {
+    $('#go').onclick = () => { S.i++; (S.energy <= 0 || S.i >= S.ev.length) ? end() : nextEvent(); };
+  });
 }
 
 function end() {
   const won = S.energy > 0, E = D.endings;
   const extra = won ? (E.win.byEnergy[S.energy] || '') : '';
-  show(`<h1>${won ? E.win.title : E.lose.title}</h1><p>${won ? E.win.text : E.lose.text}</p><p>${extra}</p><button id="go">Play again</button>`);
-  $('#go').onclick = title;
+  show(`<h1>${won ? E.win.title : E.lose.title}</h1><p>${won ? E.win.text : E.lose.text}</p><p>${extra}</p><button id="go">Play again</button>`, () => {
+    $('#go').onclick = title;
+  });
 }
 
 function validate(d) {
