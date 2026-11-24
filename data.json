@@ -59,7 +59,7 @@
       "id": "logan",
       "name": "Logan",
       "image": "logan.jpg",
-      "tagline": "Mentally challenged homosexual"
+      "tagline": "Mentally challenged homosexual."
     },
     {
       "id": "kalina",
@@ -95,7 +95,7 @@
       "id": "shane",
       "name": "Shane",
       "image": "shane.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Do it for the story, bruh."
     },
     {
       "id": "jake",
@@ -185,13 +185,13 @@
       "type": "random",
       "title": "Strange Noises",
       "image": "event-strange-noises.jpg",
-      "description": "You hear strange animal noises nearby. Seems like it's coming from that bush over there.",
+      "description": "You hear strange animal noises nearby. Seems like it's coming from that bush over there, or maybe that one.",
       "correctItems": [
         "snacks",
         "creepy-doll"
       ],
-      "successText": "Your choice was useful and you move on.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "successText": "You toss it into the distance, hopefully distracting whatever was out there. Seems like it worked. Let's move on.",
+      "failText": "That wasn't useful. The strange animal jumps out of the bushes and knocks you over as it darts away. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -203,8 +203,8 @@
       "correctItems": [
         "poppers"
       ],
-      "successText": "Your choice was useful and you move on.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "successText": "The twink looks gleeful. He says he's waiting for his date out here and these poppers will definitely come in handy. His attention turns back to the forest. Let's move on.",
+      "failText": "\"I don't need that! I need someone to use me. And you'll have to do.\" The twink's energy seems endless; yours is not. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -230,8 +230,8 @@
       "correctItems": [
         "romance-novel"
       ],
-      "successText": "You page through the book, getting momentarily caught up in the plot. But you read enough to know that he is a werewolf who only wants ONE thing, and it isn't to help you.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "successText": "You page through the book, getting momentarily caught up in the plot. But you read enough to know that he is a werewolf who only wants ONE thing, and it isn't to help you. You tell him no thanks and carry on.",
+      "failText": "He asks, \"What's that for?\" You're not certain either, and you end up following him deeper into the woods. A bit of moonlight lands on Lowe, and you notice he's much hairier than before. You try to turn back, but it's too late. In full werewolf mode, he pounces on you, eyes full of lust. You don't have time to say no, but you aren't sure you would have. Tired and sexually conflicted, you move on. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -243,8 +243,8 @@
       "correctItems": [
         "lorazepam"
       ],
-      "successText": "Your choice was useful and you move on.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "successText": "Oops, I was being a bit dramatic. The cabin probably isn't much farther. I should keep moving.",
+      "failText": "That wasn't useful. You struggle under the anxiety and mental fatigue, but you manage to find your way again. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -266,7 +266,7 @@
       "title": "Lucky Break",
       "image": "boon-lucky-break.jpg",
       "description": "The path is clear and the moon is bright.",
-      "outcomeText": "You make good time. No cost."
+      "outcomeText": "You make good time. Let's keep moving."
     },
     {
       "id": "bane-1",
