@@ -148,7 +148,7 @@ function validate(d) {
   return errs;
 }
 
-fetch('data.json').then(r => r.text()).then(t => {
+fetch('data.json', { cache: 'no-cache' }).then(r => r.text()).then(t => {
   D = JSON.parse(t);
   const errs = validate(D);
   if (errs.length) app.innerHTML = '<h2>data.json problems</h2>' + errs.map(e => `<p>${e}</p>`).join('');
