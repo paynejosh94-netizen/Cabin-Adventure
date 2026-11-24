@@ -3,9 +3,9 @@
     "gameTitle": "Cabin Adventure",
     "titleImage": "title.jpg",
     "startingEnergy": 3,
-    "itemsToPick": 3,
+    "itemsToPick": 4,
     "friendItem": "gun",
-    "friendItemHint": "Something tells you it would be smart to bring some protection out there. Are you sure you're ready?",
+    "friendItemHint": "You should probably take the gun.",
     "slot3Weights": {
       "random": 1,
       "boon": 1,
@@ -35,13 +35,13 @@
       "id": "cam",
       "name": "Cam",
       "image": "cam.jpg",
-      "tagline": "I got dishonorably discharged last week. So now I can make it on this trip."
+      "tagline": "My condition (gay) is chronic, but I'm iconic (gay)."
     },
     {
       "id": "tyler",
       "name": "Tyler",
       "image": "tyler.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "'Attention-seeking behavior' three years running."
     },
     {
       "id": "adrian",
@@ -53,37 +53,37 @@
       "id": "kristin",
       "name": "Kristin",
       "image": "kristin.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "I've got big tits, and a bigger heart."
     },
     {
       "id": "logan",
       "name": "Logan",
       "image": "logan.jpg",
-      "tagline": "Does anyone else like the sound of rain? Hehe, I'm so autistic."
+      "tagline": "Mentally challenged homosexual"
     },
     {
       "id": "kalina",
       "name": "Kalina",
       "image": "kalina.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "The truth hurts... And some of you have a low pain tolerance."
     },
     {
       "id": "christina",
       "name": "Christina",
       "image": "christina.jpg",
-      "tagline": "I came all the way from Germany. This better be good."
+      "tagline": "I don't get confused, I stay confused."
     },
     {
       "id": "paul",
       "name": "Paul",
       "image": "paul.jpg",
-      "tagline": "Who's all coming?"
+      "tagline": "Call me the grip reaper, the way you won't survive this ride."
     },
     {
       "id": "gabriel",
       "name": "Gabriel",
       "image": "gabriel.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "I'm not afraid to bite."
     },
     {
       "id": "des",
@@ -101,7 +101,7 @@
       "id": "jake",
       "name": "Jake",
       "image": "jake.jpg",
-      "tagline": "Optional one-liner."
+      "tagline": "Can I go home?"
     }
   ],
   "items": [
@@ -132,7 +132,7 @@
     {
       "id": "poppers",
       "name": "Poppers",
-      "image": null,
+      "image": "poppers.png",
       "description": "'Vinyl Cleaner...'"
     },
     {
@@ -144,25 +144,25 @@
     {
       "id": "romance-novel",
       "name": "Romance Novel",
-      "image": null,
+      "image": "romance-novel.png",
       "description": "'Bride' by Ali Hazelwood."
     },
     {
       "id": "creepy-doll",
       "name": "Creepy Doll",
-      "image": null,
+      "image": "creepy-doll.png",
       "description": "Christina's stupid doll."
     },
     {
       "id": "hiking-boots",
       "name": "Hiking Boots",
-      "image": null,
+      "image": "hiking-boots.png",
       "description": "Sturdy boots."
     },
     {
       "id": "gun",
       "name": "A Gun",
-      "image": null,
+      "image": "gun.png",
       "description": "A Gun."
     }
   ],
@@ -171,7 +171,7 @@
       "id": "random-1",
       "type": "random",
       "title": "Heavy Rainfall",
-      "image": null,
+      "image": "event-heavy-rainfall.jpg",
       "description": "The rain really starts to come down.",
       "correctItems": [
         "warm-jacket"
@@ -184,7 +184,7 @@
       "id": "random-2",
       "type": "random",
       "title": "Strange Noises",
-      "image": null,
+      "image": "event-strange-noises.jpg",
       "description": "You hear strange animal noises nearby. Seems like it's coming from that bush over there.",
       "correctItems": [
         "snacks",
@@ -198,7 +198,7 @@
       "id": "random-3",
       "type": "random",
       "title": "Wild Twink",
-      "image": null,
+      "image": "event-wild-twink.jpg",
       "description": "You see a wild twink nearby. What's he doing out here?",
       "correctItems": [
         "poppers"
@@ -211,7 +211,7 @@
       "id": "random-4",
       "type": "random",
       "title": "Treacherous Terrain",
-      "image": null,
+      "image": "event-treacherous-terrain.jpg",
       "description": "The path forward looks unstable, but we need to push through.",
       "correctItems": [
         "rope",
@@ -225,7 +225,7 @@
       "id": "random-5",
       "type": "random",
       "title": "A Helpful Stranger",
-      "image": null,
+      "image": "event-a-helpful-stranger.jpg",
       "description": "You come across a man named Lowe. He says he's certain he knows the way and that you should come with him, but you're not sure you trust that shimmer in his pale green eyes.",
       "correctItems": [
         "romance-novel"
@@ -238,7 +238,7 @@
       "id": "random-6",
       "type": "random",
       "title": "Sheer Terror",
-      "image": null,
+      "image": "event-sheer-terror.jpg",
       "description": "You feel like the cabin is too far away and that you will never make it. You're going to freeze to death out in these woods, and you know it.",
       "correctItems": [
         "lorazepam"
@@ -251,7 +251,7 @@
       "id": "random-7",
       "type": "random",
       "title": "Intense Thirst",
-      "image": null,
+      "image": "event-intense-thirst.jpg",
       "description": "You haven't had anything to drink in hours. The thirst starts to hurt.",
       "correctItems": [
         "diet-coke"
@@ -264,7 +264,7 @@
       "id": "boon-1",
       "type": "boon",
       "title": "Lucky Break",
-      "image": null,
+      "image": "boon-lucky-break.jpg",
       "description": "The path is clear and the moon is bright.",
       "outcomeText": "You make good time. No cost."
     },
@@ -272,7 +272,7 @@
       "id": "bane-1",
       "type": "bane",
       "title": "Twisted Ankle",
-      "image": null,
+      "image": "bane-twisted-ankle.jpg",
       "description": "You misstep on a root.",
       "outcomeText": "You limp onward and lose 1 energy."
     },
