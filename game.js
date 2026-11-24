@@ -113,7 +113,10 @@ const correct = e => e.type === 'friend' ? [D.settings.friendItem] : e.correctIt
 function nextEvent() {
   const e = S.ev[S.i], special = e.type === 'boon' || e.type === 'bane';
   const label = { random: 'Random Event', friend: 'Friend Event', boon: 'Boon', bane: 'Bane' }[e.type];
-  show(`<small>Event ${S.i + 1} of ${S.ev.length} - ${label}</small>${evPic(e, 'wide')}<h2>${e.title}</h2><p>${e.description}</p>` +
+  const f = e.type === 'friend' ? D.characters.find(c => c.id === e.friend) : null;
+  const top = f ? `<div class="scene">${evPic(e, 'wide')}${charPic(f, 'portrait')}</div>` : evPic(e, 'wide');
+  const body = f ? `<div class="dialogue"><div class="name">${f.name}</div><p>${e.description}</p></div>` : `<p>${e.description}</p>`;
+  show(`<small>Event ${S.i + 1} of ${S.ev.length} - ${label}</small>${top}<h2>${e.title}</h2>${body}` +
     (special ? `<button id="go">Press on</button>` :
       `<p><b>Use an item?</b></p><div>${S.bag.map(id => `<button data-id="${id}">${item(id).name}</button>`).join('')}<button class="alt" data-id="">Do nothing (-1 energy)</button></div>`), () => {
   if (special) $('#go').onclick = () => { if (e.type === 'bane') S.energy--; result(e.outcomeText, e.type === 'boon'); };
