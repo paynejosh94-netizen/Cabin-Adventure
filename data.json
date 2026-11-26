@@ -417,11 +417,17 @@
         "3": "Perfect run, not a scratch.",
         "2": "Bruised but happy.",
         "1": "You barely crawled through the door."
+      },
+      "images": {
+        "3": null,
+        "2": null,
+        "1": null
       }
     },
     "lose": {
       "title": "Lights out",
-      "text": "You collapsed before reaching the cabin."
+      "text": "You collapsed before reaching the cabin.",
+      "image": null
     }
   }
 }

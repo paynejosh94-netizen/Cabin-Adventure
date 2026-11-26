@@ -143,7 +143,9 @@ function result(text, good) {
 function end() {
   const won = S.energy > 0, E = D.endings;
   const extra = won ? (E.win.byEnergy[S.energy] || '') : '';
-  show(`<h1>${won ? E.win.title : E.lose.title}</h1><p>${won ? E.win.text : E.lose.text}</p><p>${extra}</p><button id="go">Play again</button>`, () => {
+  const file = won ? (E.win.images || {})[S.energy] : E.lose.image;
+  const art = pic('story', file, won ? `win ending ${S.energy} heart${S.energy === 1 ? '' : 's'}` : 'lose ending', 'wide');
+  show(`${art}<h1>${won ? E.win.title : E.lose.title}</h1><p>${fill(won ? E.win.text : E.lose.text)}</p>${extra ? `<p>${fill(extra)}</p>` : ''}<button id="go">Play again</button>`, () => {
     $('#go').onclick = title;
   });
 }
