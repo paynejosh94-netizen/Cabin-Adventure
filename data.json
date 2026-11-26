@@ -14,8 +14,8 @@
   },
   "story": {
     "images": {
-      "intro": null,
-      "afterPacking": null,
+      "intro": "intro.jpg",
+      "afterPacking": "after-packing.jpg",
       "busBreakdown": "breakdown.jpg"
     },
     "intro": [
