@@ -30,3 +30,15 @@ button.alt{background:#555}
 .dialogue{background:#1e232b;border:2px solid #c9a227;border-radius:8px;padding:10px 14px;margin:8px 0;text-align:left}
 .dialogue .name{font-weight:bold;color:#f0c75e;margin-bottom:2px}
 .dialogue p{margin:4px 0}
+.ending{position:relative;margin-bottom:12px}
+.ending .pic.wide{margin-bottom:0}
+.ending .overlay{position:absolute;left:0;right:0;bottom:0;padding:32px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.9) 45%);text-align:center}
+.ending h1{margin:0 0 4px;font-size:clamp(1.2rem,5vw,2rem);color:#e5484d}
+.ending p{margin:0;text-align:center;font-size:clamp(.8rem,3.2vw,1rem);line-height:1.35}
+.ending b{color:#f0c75e}
+.ending.win h1{color:#f0c75e}
+.ending .score{color:#e5484d;font-size:clamp(1.3rem,6vw,1.8rem);letter-spacing:3px;line-height:1.1}
+.ending .scoretext{font-size:clamp(.7rem,3vw,.9rem);opacity:.85;margin-bottom:4px}
+.ending .flavor{margin-top:4px;font-style:italic;color:#f0c75e}
+.ending.win .overlay{padding-top:48px}
+.ending.win .overlay{padding-top:24px;background:linear-gradient(transparent,rgba(0,0,0,.85) 70%)}

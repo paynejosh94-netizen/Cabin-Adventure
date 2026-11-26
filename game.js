@@ -3,7 +3,7 @@ const app = $('#app'), hud = $('#hud');
 let D, S;
 
 const pic = (folder, file, label, cls = '') =>
-  `<div class="pic ${cls} ${file ? '' : 'ph'}">${file ? `<img src="Images/${folder}/${file}" alt="" onerror="this.parentNode.classList.add('ph');this.remove()">` : ''}<span>${label}</span></div>`;
+  `<div class="pic ${cls} ${file ? '' : 'ph'}">${file ? `<img src="Images/${file.includes('/') ? file : folder + '/' + file}" alt="" onerror="this.parentNode.classList.add('ph');this.remove()">` : ''}<span>${label}</span></div>`;
 const charPic = (c, cls) => pic('characters', c.image, 'playable char ' + (D.characters.indexOf(c) + 1), cls);
 const itemPic = (i, cls) => pic('items', i.image, 'item ' + (D.items.indexOf(i) + 1), cls);
 const evPic = (e, cls) => pic('events', e.image, 'event background ' + (D.events.indexOf(e) + 1), cls);
@@ -145,7 +145,12 @@ function end() {
   const extra = won ? (E.win.byEnergy[S.energy] || '') : '';
   const file = won ? (E.win.images || {})[S.energy] : E.lose.image;
   const art = pic('story', file, won ? `win ending ${S.energy} heart${S.energy === 1 ? '' : 's'}` : 'lose ending', 'wide');
-  show(`${art}<h1>${won ? E.win.title : E.lose.title}</h1><p>${fill(won ? E.win.text : E.lose.text)}</p>${extra ? `<p>${fill(extra)}</p>` : ''}<button id="go">Play again</button>`, () => {
+  const max = D.settings.startingEnergy;
+  const score = `<div class="score">${'♥'.repeat(S.energy)}${'♡'.repeat(max - S.energy)}</div><div class="scoretext">${S.energy} of ${max} hearts remaining</div>`;
+  const html = won
+    ? `<div class="ending win">${art}<div class="overlay"><h1>${E.win.title}</h1>${score}<p>${fill(E.win.text)}</p>${extra ? `<p class="flavor">${fill(extra)}</p>` : ''}</div></div>`
+    : `<div class="ending">${art}<div class="overlay"><h1>${E.lose.title}</h1><p>${fill(E.lose.text)}</p></div></div>`;
+  show(`${html}<button id="go">Play again</button>`, () => {
     $('#go').onclick = title;
   });
 }

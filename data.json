@@ -419,15 +419,15 @@
         "1": "You barely crawled through the door."
       },
       "images": {
-        "3": null,
-        "2": null,
-        "1": null
+        "3": "title.jpg",
+        "2": "title.jpg",
+        "1": "title.jpg"
       }
     },
     "lose": {
       "title": "Lights out",
-      "text": "You collapsed before reaching the cabin.",
-      "image": null
+      "text": "The cabin was <em>right there</em>, its windows glowing through the trees. You were <b>SO close</b>, but you collapsed before you could reach the door.",
+      "image": "events/event-friend.jpg"
     }
   }
 }
