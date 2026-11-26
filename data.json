@@ -256,7 +256,7 @@
       "correctItems": [
         "diet-coke"
       ],
-      "successText": "Your choice was useful and you move on.",
+      "successText": "Delightful! You feel much better.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -282,9 +282,9 @@
       "friend": "cam",
       "title": "Cam Appears",
       "image": "event-friend.jpg",
-      "description": "Cam needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "description": "{player}! Over here! I know we are almost there, but I just got new work orders. I need you to drive me back.",
+      "successText": "You put {friend} down with a single shot. It's better this way.",
+      "failText": "{friend} says, \"No thanks, I don't need that. Can we head out now?\" You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -293,9 +293,9 @@
       "friend": "tyler",
       "title": "Tyler Appears",
       "image": "event-friend.jpg",
-      "description": "Tyler needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
-      "failText": "That wasn't useful. You lose 1 energy.",
+      "description": "{player}! Hey! Look, we're almost there. Before we get inside, I need you to commit to helping me with a project back home. It's nothing big, I'm just replacing my septic system.",
+      "successText": "Tyler is no longer with us. No more slave labor. You feel liberated.",
+      "failText": "\"I don't want that,\" {friend} says. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
     {
@@ -304,7 +304,7 @@
       "friend": "adrian",
       "title": "Adrian Appears",
       "image": "event-friend.jpg",
-      "description": "Adrian needs help with something. Write a unique scenario here.",
+      "description": "{player}! Over here! I need your help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
@@ -315,7 +315,7 @@
       "friend": "kristin",
       "title": "Kristin Appears",
       "image": "event-friend.jpg",
-      "description": "Kristin needs help with something. Write a unique scenario here.",
+      "description": "{player}! Over here! I need your help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
@@ -326,8 +326,8 @@
       "friend": "logan",
       "title": "Logan Appears",
       "image": "event-friend.jpg",
-      "description": "Logan needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "Pero.",
+      "successText": "You weren't sure what he was gonna say next. You aren't concerned about it.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -337,8 +337,8 @@
       "friend": "kalina",
       "title": "Kalina Appears",
       "image": "event-friend.jpg",
-      "description": "Kalina needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "{player}! Finally, we're so close! Before we head up, let me show you this new crochet stitch I just learned.",
+      "successText": "You end her before she has a chance to grab her crochet hook.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -348,8 +348,8 @@
       "friend": "christina",
       "title": "Christina Appears",
       "image": "event-friend.jpg",
-      "description": "Christina needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "{player}! Over here! I know we're almost there, but I kinda like being out in the woods. How about we all stay out here and re-enact Blair Witch?",
+      "successText": "\"How about no,\" you say as {friend} falls to the ground. \"I don't like that.\"",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -359,8 +359,8 @@
       "friend": "paul",
       "title": "Paul Appears",
       "image": "event-friend.jpg",
-      "description": "Paul needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "{player}! Hey! So I tagged this location on Sniffies while we were headed up. Three guys checked in. Would you be mad if I had them over? Just for a bit.",
+      "successText": "Bang! Paul is dead. Bang, bang. You feel better.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -370,7 +370,7 @@
       "friend": "gabriel",
       "title": "Gabriel Appears",
       "image": "event-friend.jpg",
-      "description": "Gabriel needs help with something. Write a unique scenario here.",
+      "description": "{player}! Over here! I need your help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
@@ -381,8 +381,8 @@
       "friend": "des",
       "title": "Des Appears",
       "image": "event-friend.jpg",
-      "description": "Des needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "{player}! That was a pretty easy hike, right? We should finish off the night with a 5k.",
+      "successText": "5 kg of lead later, you think you've made your point.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     },
@@ -392,7 +392,7 @@
       "friend": "shane",
       "title": "Shane Appears",
       "image": "event-friend.jpg",
-      "description": "Shane needs help with something. Write a unique scenario here.",
+      "description": "{player}! Over here! I need your help with something. Write a unique scenario here.",
       "successText": "Your item saved the day.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
@@ -403,8 +403,8 @@
       "friend": "jake",
       "title": "Jake Appears",
       "image": "event-friend.jpg",
-      "description": "Jake needs help with something. Write a unique scenario here.",
-      "successText": "Your item saved the day.",
+      "description": "{player}! Did you remember to pack chicken nuggets?",
+      "successText": "You did forget. This was the only other option.",
       "failText": "That wasn't useful. You lose 1 energy.",
       "doNothingText": "You do nothing and lose 1 energy."
     }
